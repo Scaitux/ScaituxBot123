@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-  client.on(`ready`, member => {
-client.user.setGame("Watching Last-Night:D")
-});
+client.on('ready', () => {
+  client.user.setGame('Type || ^^help ', 'https://www.twitch.tv/streamerhouse')
+})
 
 client.on('message', msg => {
   if (msg.content === '^^ping') {
